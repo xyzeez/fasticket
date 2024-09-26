@@ -48,3 +48,19 @@
       url("/fonts/Gilroy-Heavy.woff") format("woff");
   }
 }
+
+@layer components {
+  .btn {
+    @apply rounded-md bg-[hsla(273,70%,36%,1)] px-4 py-3 text-center text-base font-medium text-white transition-colors hover:bg-[hsla(273,70%,45%,1)] active:bg-[hsla(273,70%,36%,1)];
+  }
+
+  .btn-large {
+    @apply w-full;
+  }
+}
+
+@layer utilities {
+  .inner {
+    @apply mx-auto w-full max-w-screen-2xl;
+  }
+}
