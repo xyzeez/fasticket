@@ -47,11 +47,15 @@
       local("Gilroy-Heavy"),
       url("/fonts/Gilroy-Heavy.woff") format("woff");
   }
+
+  .inner {
+    @apply mx-auto w-full max-w-screen-xl;
+  }
 }
 
 @layer components {
   .btn {
-    @apply rounded-md bg-[hsla(273,70%,36%,1)] px-4 py-3 text-center text-base font-medium text-white transition-colors hover:bg-[hsla(273,70%,45%,1)] active:bg-[hsla(273,70%,36%,1)];
+    @apply w-fit rounded-md bg-[hsla(273,70%,36%,1)] px-4 py-3 text-center text-base font-medium text-white transition-colors hover:bg-[hsla(273,70%,45%,1)] active:bg-[hsla(273,70%,36%,1)];
   }
 
   .btn-large {
@@ -60,7 +64,17 @@
 }
 
 @layer utilities {
-  .inner {
-    @apply mx-auto w-full max-w-screen-2xl;
+  .result-clip {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+  .result-clip:nth-child(3) {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 1023px) {
+    .result-clip:nth-child(1) {
+      clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    }
   }
 }
