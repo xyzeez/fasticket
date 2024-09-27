@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // UIs
 import SearchForm from "../ui/SearchForm";
 import ResultsBoard from "../ui/ResultsBoard";
+import UpcomingCard, { upcomingData } from "../components/UpcomingCard";
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
             <div className="w-full lg:hidden">
               <SearchForm />
             </div>
-            <Link to="/" className="btn hidden lg:block">
+            <Link to="/" className="btn btn-big hidden lg:block">
               Explore tickets
             </Link>
             <p className="mt-[41px] hidden flex-row items-center gap-[17px] text-xs font-semibold lg:flex">
@@ -32,6 +33,21 @@ const Home = () => {
             </p>
           </div>
           <ResultsBoard relativeClasses="row-start-2 row-end-3 lg:row-start-1 lg:row-end-2 lg:col-start-2 lg:col-end-3 lg:ml-auto" />
+        </div>
+      </section>
+      <section className="inner pb-6 pt-14 lg:px-9 lg:pb-16 lg:pt-24">
+        <div className="px-4 lg:px-0">
+          <h2 className="text-xl/6 font-semibold lg:text-2xl/6">
+            Upcoming weekend duels
+          </h2>
+          <p className="mb-6 mt-2 text-sm font-normal lg:text-base">
+            Watch the league favorites play each other live
+          </p>
+        </div>
+        <div className="no-scrollbar flex snap-x snap-proximity flex-row items-center justify-between gap-4 overflow-x-scroll px-4 *:shrink-0 *:snap-center lg:gap-6 lg:p-0">
+          {upcomingData.map((data, index) => (
+            <UpcomingCard key={index} data={data} />
+          ))}
         </div>
       </section>
     </main>

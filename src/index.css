@@ -55,11 +55,23 @@
 
 @layer components {
   .btn {
-    @apply w-fit rounded-md bg-[hsla(273,70%,36%,1)] px-4 py-3 text-center text-base font-medium text-white transition-colors hover:bg-[hsla(273,70%,45%,1)] active:bg-[hsla(273,70%,36%,1)];
+    @apply w-fit rounded-md bg-[hsla(273,70%,36%,1)] text-center text-base font-medium text-white transition-colors hover:bg-[hsla(273,70%,45%,1)] active:bg-[hsla(273,70%,36%,1)];
+  }
+
+  .btn-icon {
+    @apply flex flex-row items-center gap-2;
+  }
+
+  .btn-small {
+    @apply px-[14px] py-2;
+  }
+
+  .btn-big {
+    @apply px-6 py-3;
   }
 
   .btn-large {
-    @apply w-full;
+    @apply w-full p-2 font-semibold;
   }
 }
 
@@ -76,5 +88,14 @@
     .result-clip:nth-child(1) {
       clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
     }
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
