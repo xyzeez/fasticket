@@ -7,7 +7,7 @@ import ResultsBoard from "../ui/ResultsBoard";
 const Home = () => {
   return (
     <main className="">
-      <section className="grid bg-[url('/images/hero-bg.png')] bg-cover bg-left-top bg-no-repeat pt-[87px] sm:pb-10 lg:min-h-[528px] lg:p-[29px]">
+      <section className="grid bg-[hsla(240,31%,10%,1)] bg-[url('/images/hero-bg.png')] bg-cover bg-left-top bg-no-repeat pt-[87px] sm:pb-10 lg:min-h-[528px] lg:p-[29px]">
         <div className="inner grid grid-cols-1 grid-rows-[auto_1fr] gap-14 overflow-x-hidden lg:grid-cols-[auto_1fr] lg:grid-rows-1 lg:gap-0">
           <div className="flex flex-col items-center px-8 text-center text-white lg:my-auto lg:ml-[47px] lg:items-start lg:px-0 lg:text-start">
             <h1 className="w-full text-2xl font-bold lg:max-w-[16ch] lg:text-[40px]/[48px]">
