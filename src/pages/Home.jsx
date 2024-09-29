@@ -72,6 +72,26 @@ const Home = () => {
           data={viewPointsData}
         />
       </section>
+      <section className="inner px-4 py-6 lg:px-9 lg:py-16">
+        <div className="relative overflow-hidden rounded-lg bg-[url('/images/final.png')] bg-cover bg-center bg-no-repeat px-4 py-10 lg:p-28">
+          <div className="absolute inset-y-0 left-0 z-0 w-1/2 bg-[linear-gradient(90deg,#1F223A_7.13%,#262B40_28.67%,#2A2D43_41.59%,rgba(28,25,25,0)_100%)]"></div>
+          <div className="relative z-10 flex w-full flex-col items-center justify-center text-white lg:max-w-fit lg:justify-start">
+            <h2 className="text-4xl font-bold">KING CUP</h2>
+            <p className="my-8 flex flex-row items-center gap-5">
+              <img src="/images/final-home.png" alt="" className="size-16" />
+              <span className="sr-only">Al Qadsiah</span>
+              <span className="text-xl font-medium">VS</span>
+              <span className="sr-only">Al Oroobah</span>
+              <img src="/images/final-away.png" alt="" className="size-16" />
+            </p>
+            <time dateTime="">Feb 21 - 11:56 KSA</time>
+            <button className="btn btn-icon btn-small mt-10">
+              Get Ticket
+              <img src="/icons/chevron-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
