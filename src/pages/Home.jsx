@@ -7,6 +7,7 @@ import UpcomingCard, { upcomingData } from "../components/UpcomingCard";
 import SearchForm from "../ui/SearchForm";
 import ResultsBoard from "../ui/ResultsBoard";
 import MoreMatchSlider, { moreMatchData } from "../ui/MoreMatchSlider";
+import MustWatchList, { mustWatchData } from "../ui/MustWatchList";
 
 const Home = () => {
   return (
@@ -54,6 +55,7 @@ const Home = () => {
         </div>
       </section>
       <MoreMatchSlider data={moreMatchData} />
+      <MustWatchList data={mustWatchData} />
     </main>
   );
 };
