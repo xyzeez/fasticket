@@ -8,6 +8,7 @@ import SearchForm from "../ui/SearchForm";
 import ResultsBoard from "../ui/ResultsBoard";
 import MoreMatchSlider, { moreMatchData } from "../ui/MoreMatchSlider";
 import MustWatchList, { mustWatchData } from "../ui/MustWatchList";
+import FansViewPoints, { viewPointsData } from "../ui/FansViewPoints";
 
 const Home = () => {
   return (
@@ -56,6 +57,21 @@ const Home = () => {
       </section>
       <MoreMatchSlider data={moreMatchData} />
       <MustWatchList data={mustWatchData} />
+      <section className="inner grid grid-cols-1 grid-rows-[auto_1fr] gap-6 py-6 lg:grid-cols-[auto_1fr] lg:grid-rows-1 lg:gap-14 lg:px-9 lg:py-16 xl:gap-36">
+        <div className="col-start-1 col-end-2 row-start-1 row-end-2 px-4 lg:my-auto lg:max-w-[33ch] lg:px-0">
+          <h2 className="text-xl/6 font-semibold lg:text-4xl/[48px] lg:font-bold">
+            Fans view point and opinions
+          </h2>
+          <p className="mt-2 text-sm font-normal lg:text-base">
+            Dive into the heart of opinions, where every viewpoint is a unique
+            story waiting to be told.
+          </p>
+        </div>
+        <FansViewPoints
+          relativeClasses="col-start-1 col-end-2 row-start-2 row-end-3 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2"
+          data={viewPointsData}
+        />
+      </section>
     </main>
   );
 };
