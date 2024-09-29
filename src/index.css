@@ -73,6 +73,14 @@
   .btn-large {
     @apply w-full p-2 font-semibold;
   }
+
+  .swiper-custom-bullet {
+    @apply size-2 rounded-full bg-[hsla(273,70%,36%,1)] opacity-30;
+  }
+
+  .swiper-custom-bullet.swiper-custom-bullet-active {
+    @apply opacity-100;
+  }
 }
 
 @layer utilities {
