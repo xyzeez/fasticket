@@ -124,7 +124,7 @@ const MustWatchList = ({ data }) => {
       </div>
       <div
         id="customPagination"
-        className="absolute inset-x-0 bottom-2 z-10 flex flex-row items-center justify-center gap-2 lg:hidden"
+        className="absolute inset-x-0 bottom-2 z-10 flex flex-row items-center justify-center gap-2 sm:hidden"
         slot="wrapper-end"
       ></div>
       {data.map(({ home, away, date, img }, index) => (
@@ -148,7 +148,7 @@ const MustWatchList = ({ data }) => {
             <button className="btn btn-big z-10 col-start-1 col-end-2 row-start-2 row-end-3 m-auto mt-3 lg:mt-4">
               Get ticket now
             </button>
-            <div className="z-0 col-start-1 col-end-2 row-start-1 row-end-3 grid min-h-64 grid-cols-2 grid-rows-1">
+            <div className="z-0 col-start-1 col-end-2 row-start-1 row-end-3 grid h-[276px] grid-cols-2 grid-rows-1 lg:h-[430px]">
               <img
                 src={img[0]}
                 alt=""
