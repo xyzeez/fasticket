@@ -138,7 +138,7 @@ const MoreMatchSlider = ({ data }) => {
       tag="section"
       slidesPerView="auto"
       spaceBetween={16}
-      className="inner max-w-[1208px] px-4 py-6 lg:px-8 lg:py-16 xl:px-0"
+      className="inner max-w-[1208px] px-4 py-6 lg:px-9 lg:py-16 xl:px-0"
     >
       <div
         className="flex flex-row justify-between gap-4 px-4 lg:px-0"
