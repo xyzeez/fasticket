@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 
+// Components
+import UpcomingCard, { upcomingData } from "../components/UpcomingCard";
+
 // UIs
 import SearchForm from "../ui/SearchForm";
 import ResultsBoard from "../ui/ResultsBoard";
-import UpcomingCard, { upcomingData } from "../components/UpcomingCard";
+import MoreMatchSlider, { moreMatchData } from "../ui/MoreMatchSlider";
 
 const Home = () => {
   return (
@@ -50,6 +53,7 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <MoreMatchSlider data={moreMatchData} />
     </main>
   );
 };
