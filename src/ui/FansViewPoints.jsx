@@ -1,10 +1,12 @@
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
+import { ChevronLeftIcon } from "@heroicons/react/20/solid";
 
 // Components
 import ViewPointCard from "../components/ViewPointCard";
 import ViewPointVideoCard from "../components/ViewPointVideoCard";
 
+// Dummy Data
 export const viewPointsData = [
   {
     author: "Al Shuaib",
@@ -40,11 +42,11 @@ const NextArrow = () => {
   const swiper = useSwiper();
   return (
     <button
-      className="w-fit rotate-90 scale-95 rounded-full border border-[hsla(0,0%,79%,1)] bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-0 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-1 focus:ring-black lg:mr-2"
-      aria-label="Next category"
+      className="rounded-btn scale-95"
+      aria-label="Next View Point"
       onClick={() => swiper.slideNext()}
     >
-      <img src="/icons/chevron-down.svg" className="h-6 w-6 text-gray-600" />
+      <ChevronLeftIcon className="size-6 transition-colors" />
     </button>
   );
 };

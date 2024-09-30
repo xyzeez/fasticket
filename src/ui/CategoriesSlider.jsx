@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
 const categories = [
   "FDL league",
@@ -23,11 +24,11 @@ const PrevArrow = () => {
   const swiper = useSwiper();
   return (
     <button
-      className="absolute left-1 top-1/2 z-50 w-fit -translate-y-1/2 rotate-90 rounded-full border border-[hsla(0,0%,79%,1)] bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-0 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-1 focus:ring-[hsla(273,70%,36%,1)]"
+      className="rounded-btn absolute left-1 top-1/2 z-50 -translate-y-1/2"
       aria-label="Previous category"
       onClick={() => swiper.slidePrev()}
     >
-      <img src="/icons/chevron-down.svg" className="h-6 w-6 text-gray-600" />
+      <ChevronLeftIcon className="size-6 transition-colors" />
     </button>
   );
 };
@@ -36,11 +37,11 @@ const NextArrow = () => {
   const swiper = useSwiper();
   return (
     <button
-      className="absolute right-1 top-1/2 z-50 w-fit -translate-y-1/2 -rotate-90 rounded-full border border-[hsla(0,0%,79%,1)] bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-0 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-1 focus:ring-[hsla(273,70%,36%,1)]"
+      className="rounded-btn absolute right-1 top-1/2 z-50 -translate-y-1/2"
       aria-label="Next category"
       onClick={() => swiper.slideNext()}
     >
-      <img src="/icons/chevron-down.svg" className="h-6 w-6 text-gray-600" />
+      <ChevronRightIcon className="size-6 transition-colors" />
     </button>
   );
 };

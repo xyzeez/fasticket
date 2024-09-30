@@ -1,3 +1,5 @@
+import { PlayCircleIcon } from "@heroicons/react/24/outline";
+
 const ViewPointVideoCard = ({ data }) => {
   const { author, content, img, videoLink } = data;
 
@@ -10,7 +12,8 @@ const ViewPointVideoCard = ({ data }) => {
         <h1 className="order-2 text-xs font-bold">{author}</h1>
         <p className="order-1 line-clamp-2 text-xs font-normal">{content}</p>
         <a href={videoLink} className="btn btn-small btn-icon order-3 mt-1">
-          <img src="/icons/play-circle-outline.svg" alt="" /> Watch video
+          <PlayCircleIcon className="size-5" />
+          Watch video
         </a>
       </div>
     </article>

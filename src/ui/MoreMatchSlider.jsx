@@ -1,9 +1,11 @@
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
+import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 // Utils
 import { extractDate, extractTime } from "../utils";
 
+// Dummy Data
 export const moreMatchData = [
   {
     img: "/images/more-card-1.png",
@@ -123,11 +125,11 @@ const NextArrow = () => {
   const swiper = useSwiper();
   return (
     <button
-      className="w-fit -rotate-90 rounded-full border border-[hsla(0,0%,79%,1)] bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-0 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-1 focus:ring-black lg:mr-2"
+      className="rounded-btn mr-1"
       aria-label="Next category"
       onClick={() => swiper.slideNext()}
     >
-      <img src="/icons/chevron-down.svg" className="h-6 w-6 text-gray-600" />
+      <ChevronRightIcon className="size-6 transition-colors" />
     </button>
   );
 };
@@ -137,7 +139,7 @@ const MoreMatchSlider = ({ data }) => {
     <Swiper
       tag="section"
       slidesPerView="auto"
-      spaceBetween={16}
+      spaceBetween={18}
       className="inner max-w-[1208px] px-4 py-6 lg:px-9 lg:py-16 xl:px-0"
     >
       <div

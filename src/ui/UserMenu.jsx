@@ -1,5 +1,8 @@
 import { useCallback, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { ChevronDownIcon, UserCircleIcon } from "@heroicons/react/24/outline";
+
+// Hooks
 import useFocusOutside from "../hooks/useFocusOutside";
 
 const menus = ["Tickets", "Profile", "Settings"];
@@ -38,10 +41,11 @@ const UserMenu = ({ relativeClasses }) => {
           className="peer flex w-fit flex-row items-center"
           onClick={handleToggleMenu}
         >
-          <img src="icons/user.svg" className="h-6 w-6" />
-          <img
-            src="icons/chevron-down.svg"
-            className={`h-6 w-5 transition-all duration-500 ${showMenu ? "rotate-180" : "rotate-0"}`}
+          <UserCircleIcon
+            className={`size-5 transition-all duration-500 ${showMenu && "text-[hsla(273,70%,36%,1)]"} `}
+          />
+          <ChevronDownIcon
+            className={`size-4 transition-all duration-500 ${showMenu && "-rotate-180 text-[hsla(273,70%,36%,1)]"}`}
           />
         </button>
         <div

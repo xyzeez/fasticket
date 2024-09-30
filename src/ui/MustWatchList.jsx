@@ -3,8 +3,9 @@ import { EffectFade, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
-// Variables
+// Dummy Data
 export const mustWatchData = [
   {
     img: ["/images/must-watch-home-1.png", "/images/must-watch-away-1.png"],
@@ -56,30 +57,28 @@ export const mustWatchData = [
   },
 ];
 
-const PrevButton = () => {
+const PrevArrow = () => {
   const swiper = useSwiper();
-
   return (
     <button
-      className="w-fit rotate-90 rounded-full border border-[hsla(0,0%,79%,1)] bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-0 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-1 focus:ring-[hsla(273,70%,36%,1)]"
+      className="rounded-btn"
       aria-label="Previouse Match"
-      onClick={() => swiper.slidePrev()}
+      onClick={() => swiper.slideNext()}
     >
-      <img src="/icons/chevron-down.svg" className="h-6 w-6 text-gray-600" />
+      <ChevronLeftIcon className="size-6 transition-colors" />
     </button>
   );
 };
 
-const NextButton = () => {
+const NextArrow = () => {
   const swiper = useSwiper();
-
   return (
     <button
-      className="w-fit -rotate-90 rounded-full border border-[hsla(0,0%,79%,1)] bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-0 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-1 focus:ring-[hsla(273,70%,36%,1)]"
-      aria-label="Next Match"
+      className="rounded-btn"
+      aria-label="Next category"
       onClick={() => swiper.slideNext()}
     >
-      <img src="/icons/chevron-down.svg" className="h-6 w-6 text-gray-600" />
+      <ChevronRightIcon className="size-6 transition-colors" />
     </button>
   );
 };
@@ -117,8 +116,8 @@ const MustWatchList = ({ data }) => {
             </p>
           </div>
           <div className="hidden flex-row items-center gap-4 md:flex">
-            <PrevButton />
-            <NextButton />
+            <PrevArrow />
+            <NextArrow />
           </div>
         </div>
       </div>

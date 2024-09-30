@@ -1,5 +1,9 @@
+import { ChevronRightIcon } from "@heroicons/react/16/solid";
+
+// Utils
 import { extractDate, extractTime } from "../utils";
 
+// Dummy Data
 export const upcomingData = [
   {
     img: "/images/upcoming-card-1.png",
@@ -45,7 +49,7 @@ const UpcomingCard = ({ data }) => {
         </div>
         <button className="btn btn-icon btn-small">
           Get Ticket
-          <img src="/icons/chevron-right.svg" alt="" />
+          <ChevronRightIcon className="size-4" />
         </button>
       </div>
       <img src={img} alt="" className="w-full object-cover object-center" />

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 const SearchForm = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -11,7 +12,7 @@ const SearchForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="relative mx-auto w-full max-w-[325px]"
+      className="group relative mx-auto w-full max-w-[325px]"
     >
       <label htmlFor="search-input" className="sr-only">
         Search by team or competition
@@ -26,7 +27,7 @@ const SearchForm = () => {
         aria-label="Search by team or competition"
       />
       <div className="absolute inset-y-0 left-0 flex items-center pl-4">
-        <img src="/icons/magnify.svg" className="h-6 w-6" aria-hidden="true" />
+        <MagnifyingGlassIcon className="size-5 transition-colors group-has-[:focus]:text-[hsla(273,70%,36%,1)]" />
       </div>
       <button type="submit" className="sr-only" aria-label="Submit search">
         Search

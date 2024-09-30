@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ChevronRightIcon } from "@heroicons/react/16/solid";
 
 // Components
 import UpcomingCard, { upcomingData } from "../components/UpcomingCard";
@@ -87,7 +88,7 @@ const Home = () => {
             <time dateTime="">Feb 21 - 11:56 KSA</time>
             <button className="btn btn-icon btn-small mt-5 lg:mt-10">
               Get Ticket
-              <img src="/icons/chevron-right.svg" alt="" />
+              <ChevronRightIcon className="size-4" />
             </button>
           </div>
         </div>

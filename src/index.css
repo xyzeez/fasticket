@@ -74,6 +74,10 @@
     @apply w-full p-2 font-semibold;
   }
 
+  .rounded-btn {
+    @apply rounded-full bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-1 ring-[hsla(0,0%,79%,1)] transition-all hover:scale-105 hover:text-[hsla(273,70%,36%,1)] hover:ring-[hsla(273,70%,36%,1)] focus:outline-none;
+  }
+
   .swiper-custom-bullet {
     @apply size-2 rounded-full bg-[hsla(273,70%,36%,1)] opacity-30;
   }
