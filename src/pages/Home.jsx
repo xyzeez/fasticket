@@ -92,6 +92,23 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <aside className="inner flex flex-col items-center gap-12 px-4 py-6 lg:gap-28 lg:px-9 lg:py-16">
+        <div className="order-2 max-w-[28ch] text-center md:max-w-max">
+          <h2 className="text-2xl font-bold text-[hsla(80,13%,19%,1)] lg:text-4xl">
+            Experience a betterway to buy tickets
+          </h2>
+          <p className="mt-4 text-base font-normal text-[hsla(120,1%,27%,1)]">
+            Never miss your favorite team play
+          </p>
+        </div>
+        <picture className="order-1 w-full max-w-96 overflow-hidden rounded-lg md:max-w-[1000px]">
+          <source
+            media="(min-width: 768px)"
+            srcSet="/public/images/advert-desktop.svg"
+          />
+          <img src="/public/images/advert.svg" alt="" className="w-full" />
+        </picture>
+      </aside>
     </main>
   );
 };
