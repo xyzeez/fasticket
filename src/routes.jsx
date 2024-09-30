@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 // UIs
 import Layout from "./ui/Layout";
@@ -13,7 +13,7 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Navigate to="home" replace={true} />,
+        element: <Home />,
       },
       {
         path: "home",
