@@ -54,19 +54,29 @@ const Footer = ({ relativeClasses }) => {
               </h3>
             </li>
             <li>
-              <Link to="/">Community standards</Link>
+              <Link to="/" className="menu-link">
+                Community standards
+              </Link>
             </li>
             <li>
-              <Link to="/">Privacy policy</Link>
+              <Link to="/" className="menu-link">
+                Privacy policy
+              </Link>
             </li>
             <li>
-              <Link to="/">Terms</Link>
+              <Link to="/" className="menu-link">
+                Terms
+              </Link>
             </li>
             <li>
-              <Link to="/">Cookies policy</Link>
+              <Link to="/" className="menu-link">
+                Cookies policy
+              </Link>
             </li>
             <li>
-              <Link to="/">Cookies settings</Link>
+              <Link to="/" className="menu-link">
+                Cookies settings
+              </Link>
             </li>
           </menu>
           <menu className="flex flex-col gap-2 text-sm text-[hsla(206,20%,34%,1)] lg:gap-4 lg:text-base">
@@ -76,19 +86,29 @@ const Footer = ({ relativeClasses }) => {
               </h3>
             </li>
             <li>
-              <Link to="/">About Fasticket</Link>
+              <Link to="/" className="menu-link">
+                About Fasticket
+              </Link>
             </li>
             <li>
-              <Link to="/">Brand resources</Link>
+              <Link to="/" className="menu-link">
+                Brand resources
+              </Link>
             </li>
             <li>
-              <Link to="/">Gallery</Link>
+              <Link to="/" className="menu-link">
+                Gallery
+              </Link>
             </li>
             <li>
-              <Link to="/">Cookies policy</Link>
+              <Link to="/" className="menu-link">
+                Cookies policy
+              </Link>
             </li>
             <li>
-              <Link to="/">Cookies settings</Link>
+              <Link to="/" className="menu-link">
+                Cookies settings
+              </Link>
             </li>
           </menu>
           <menu className="flex flex-col gap-2 text-sm text-[hsla(206,20%,34%,1)] lg:gap-4 lg:text-base">
@@ -98,16 +118,24 @@ const Footer = ({ relativeClasses }) => {
               </h3>
             </li>
             <li>
-              <Link to="/">Al-Qadsiah</Link>
+              <Link to="/" className="menu-link">
+                Al-Qadsiah
+              </Link>
             </li>
             <li>
-              <Link to="/">Al-Qadsiah</Link>
+              <Link to="/" className="menu-link">
+                Al-Qadsiah
+              </Link>
             </li>
             <li>
-              <Link to="/">Al-Qadsiah</Link>
+              <Link to="/" className="menu-link">
+                Al-Qadsiah
+              </Link>
             </li>
             <li>
-              <Link to="/">Al-Qadsiah</Link>
+              <Link to="/" className="menu-link">
+                Al-Qadsiah
+              </Link>
             </li>
           </menu>
           <menu className="flex flex-col gap-2 text-sm text-[hsla(206,20%,34%,1)] lg:gap-4 lg:text-base">
@@ -117,19 +145,29 @@ const Footer = ({ relativeClasses }) => {
               </h3>
             </li>
             <li>
-              <Link to="/">FDL leagues</Link>
+              <Link to="/" className="menu-link">
+                FDL leagues
+              </Link>
             </li>
             <li>
-              <Link to="/">The King cup</Link>
+              <Link to="/" className="menu-link">
+                The King cup
+              </Link>
             </li>
             <li>
-              <Link to="/">Terms</Link>
+              <Link to="/" className="menu-link">
+                Terms
+              </Link>
             </li>
             <li>
-              <Link to="/">Cookies policy</Link>
+              <Link to="/" className="menu-link">
+                Cookies policy
+              </Link>
             </li>
             <li>
-              <Link to="/">Cookies settings</Link>
+              <Link to="/" className="menu-link">
+                Cookies settings
+              </Link>
             </li>
           </menu>
         </nav>

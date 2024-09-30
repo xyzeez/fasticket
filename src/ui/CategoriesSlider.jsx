@@ -56,7 +56,9 @@ const CategoriesSlider = () => {
       >
         {categories.map((category, index) => (
           <SwiperSlide key={index}>
-            <Link to="/">{category}</Link>
+            <Link to="/" className="menu-link">
+              {category}
+            </Link>
           </SwiperSlide>
         ))}
         <PrevArrow />

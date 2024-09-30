@@ -74,8 +74,16 @@
     @apply w-full p-2 font-semibold;
   }
 
+  .btn-outline {
+    @apply w-full rounded bg-transparent p-2 pb-[6px] text-sm/[14px] text-black outline-none ring-1 ring-[hsla(213,20%,89%,1)] transition-colors hover:ring-[hsla(273,70%,36%,1)] focus:ring-[hsla(273,70%,36%,1)] active:bg-[hsla(273,70%,36%,1)] active:text-white active:ring-[hsla(273,70%,36%,1)];
+  }
+
   .rounded-btn {
     @apply rounded-full bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-1 ring-[hsla(0,0%,79%,1)] transition-all hover:scale-105 hover:text-[hsla(273,70%,36%,1)] hover:ring-[hsla(273,70%,36%,1)] focus:outline-none;
+  }
+
+  .menu-link {
+    @apply transition-colors hover:text-[hsla(273,70%,36%,1)];
   }
 
   .swiper-custom-bullet {

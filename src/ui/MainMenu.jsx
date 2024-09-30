@@ -44,11 +44,11 @@ const MainMenu = ({ relativeClasses }) => {
       >
         <ul className="flex w-full flex-col gap-6 text-sm/[14px] font-medium text-[hsla(0,0%,0%,1)] lg:flex-row">
           {menus.map((item, index) => (
-            <Link key={index} to="/" className="w-fit">
+            <Link key={index} to="/" className="menu-link w-fit">
               {item}
             </Link>
           ))}
-          <Link to="/" className="btn btn-large lg:hidden">
+          <Link to="/" className="btn btn-large menu-link lg:hidden">
             Explore tickets
           </Link>
         </ul>
