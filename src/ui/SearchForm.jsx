@@ -27,7 +27,7 @@ const SearchForm = () => {
         aria-label="Search by team or competition"
       />
       <div className="absolute inset-y-0 left-0 flex items-center pl-4">
-        <MagnifyingGlassIcon className="size-5 transition-colors group-has-[:focus]:text-[hsla(273,70%,36%,1)]" />
+        <MagnifyingGlassIcon className="size-5 text-[hsla(187,6%,64%,1)] transition-colors group-has-[:focus]:text-[hsla(273,70%,36%,1)]" />
       </div>
       <button type="submit" className="sr-only" aria-label="Submit search">
         Search
