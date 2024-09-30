@@ -54,17 +54,18 @@ const FansViewPoints = ({ relativeClasses, data }) => {
     <Swiper
       slidesPerView="auto"
       spaceBetween={16}
+      grabCursor
       breakpoints={{
         1024: {
           spaceBetween: 24,
         },
       }}
-      className={`${relativeClasses} relative px-4 lg:grid lg:grid-cols-[auto_1fr] lg:grid-rows-1 lg:px-0 lg:pr-[56px] xl:pr-[140px]`}
+      className={`${relativeClasses} px-4 lg:grid lg:grid-cols-[3.5rem_1fr] lg:grid-rows-1 lg:px-0 lg:pr-14 xl:grid-cols-[8rem_1fr] xl:pr-32`}
       wrapperTag="ul"
-      wrapperClass="lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 xl:pl-[140px] lg:pl-[56px]"
+      wrapperClass="lg:col-start-2  lg:col-end-3 lg:row-start-1 lg:row-end-2"
     >
       <div
-        className="absolute inset-y-0 left-0 z-10 hidden min-w-[56px] flex-row items-center bg-white pl-1 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2 lg:flex xl:min-w-[140px]"
+        className="gradient z-10 hidden -translate-x-1 scale-105 flex-row items-center pl-3 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2 lg:flex"
         slot="container-start"
       >
         <NextArrow />
