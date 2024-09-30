@@ -145,7 +145,7 @@ const MustWatchList = ({ data }) => {
                 VS
               </span>
             </div>
-            <button className="btn btn-big z-10 col-start-1 col-end-2 row-start-2 row-end-3 m-auto mt-3 lg:mt-4">
+            <button className="btn btn-small z-10 col-start-1 col-end-2 row-start-2 row-end-3 m-auto mt-3 lg:mt-4">
               Get ticket now
             </button>
             <div className="z-0 col-start-1 col-end-2 row-start-1 row-end-3 grid h-[276px] grid-cols-2 grid-rows-1 lg:h-[430px]">
