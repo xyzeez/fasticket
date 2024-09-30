@@ -40,7 +40,7 @@ const NextArrow = () => {
   const swiper = useSwiper();
   return (
     <button
-      className="w-fit -rotate-90 rounded-full border border-[hsla(0,0%,79%,1)] bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-0 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-1 focus:ring-black lg:mr-2"
+      className="w-fit rotate-90 scale-95 rounded-full border border-[hsla(0,0%,79%,1)] bg-[hsla(0,0%,100%,1)] shadow-[0px_1.5px_3px_0px_hsla(0,0%,0%,0.08),_0px_0px_4.5px_0px_hsla(0,0%,0%,0.02)] ring-0 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-1 focus:ring-black lg:mr-2"
       aria-label="Next category"
       onClick={() => swiper.slideNext()}
     >
@@ -57,10 +57,10 @@ const FansViewPoints = ({ relativeClasses, data }) => {
       grabCursor
       breakpoints={{
         1024: {
-          spaceBetween: 24,
+          spaceBetween: 0,
         },
       }}
-      className={`${relativeClasses} px-4 lg:grid lg:grid-cols-[3.5rem_1fr] lg:grid-rows-1 lg:px-0 lg:pr-14 xl:grid-cols-[8rem_1fr] xl:pr-32`}
+      className={`${relativeClasses} px-4 lg:grid lg:grid-cols-[3.5rem_1fr] lg:grid-rows-1 lg:px-0 lg:pr-20 xl:grid-cols-[8rem_1fr] xl:pr-[9.5rem]`}
       wrapperTag="ul"
       wrapperClass="lg:col-start-2  lg:col-end-3 lg:row-start-1 lg:row-end-2"
     >
@@ -71,7 +71,10 @@ const FansViewPoints = ({ relativeClasses, data }) => {
         <NextArrow />
       </div>
       {data.map((item, index) => (
-        <SwiperSlide key={index} className="grid w-fit grid-cols-1 grid-rows-1">
+        <SwiperSlide
+          key={index}
+          className="grid w-fit grid-cols-1 grid-rows-1 lg:pl-6 lg:transition-transform lg:duration-500 lg:[&.swiper-slide-next]:-translate-y-[5%] lg:[&.swiper-slide-next]:translate-x-[5%] lg:[&.swiper-slide-next]:scale-[90%] lg:[&.swiper-slide-next]:pl-0 lg:last:[&.swiper-slide-next]:-translate-y-[0%] lg:last:[&.swiper-slide-next]:translate-x-[0%] lg:last:[&.swiper-slide-next]:scale-[100%] lg:last:[&.swiper-slide-next]:pl-6"
+        >
           {item.videoLink ? (
             <ViewPointVideoCard data={item} />
           ) : (
