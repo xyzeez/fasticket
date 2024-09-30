@@ -12,21 +12,13 @@ const Footer = ({ relativeClasses }) => {
             <Logo />
             <ul className="flex flex-row items-center gap-5">
               <a href="#" aria-label="facebook link">
-                <img
-                  src="/public/icons/facebook.svg"
-                  alt=""
-                  className="size-6"
-                />
+                <img src="/icons/facebook.svg" alt="" className="size-6" />
               </a>
               <a href="#" aria-label="x link">
-                <img src="/public/icons/x.svg" alt="" className="size-6" />
+                <img src="/icons/x.svg" alt="" className="size-6" />
               </a>
               <a href="#" aria-label="instagram link">
-                <img
-                  src="/public/icons/instagram.svg"
-                  alt=""
-                  className="size-6"
-                />
+                <img src="/icons/instagram.svg" alt="" className="size-6" />
               </a>
             </ul>
           </div>
