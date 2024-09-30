@@ -50,7 +50,7 @@ const UserMenu = ({ relativeClasses }) => {
         </button>
         <div
           ref={focusOutRef}
-          className={`${showMenu ? "visible translate-y-0 scale-100 opacity-100" : "invisible translate-y-1 scale-90 opacity-0"} absolute top-[calc(100%+12px)] w-full max-w-[120px] origin-top-left rounded border bg-[hsla(0,0%,100%,1)] p-2 shadow-[0px_2px_4px_0px_hsla(0,0%,0%,0.08),0px_0px_6px_0px_hsla(0,0%,0%,0.02)] transition-all duration-300 focus-within:visible focus-within:translate-y-0 focus-within:scale-100 focus-within:opacity-100 peer-focus-visible:visible peer-focus-visible:translate-y-0 peer-focus-visible:scale-100 peer-focus-visible:opacity-100 lg:right-0 lg:origin-top-right`}
+          className={`${showMenu ? "visible translate-y-0 scale-100 opacity-100" : "invisible translate-y-1 scale-90 opacity-0"} absolute top-[calc(100%+12px)] w-full max-w-[120px] origin-top-left rounded border bg-[hsla(0,0%,100%,1)] p-2 shadow-[0px_2px_4px_0px_hsla(0,0%,0%,0.08),0px_0px_6px_0px_hsla(0,0%,0%,0.02)] transition-all duration-300 focus-within:visible focus-within:translate-y-0 focus-within:scale-100 focus-within:opacity-100 peer-focus-visible:visible peer-focus-visible:translate-y-0 peer-focus-visible:scale-100 peer-focus-visible:opacity-100 lg:right-8 lg:origin-top-right`}
         >
           <ul className="flex w-full flex-col gap-2">
             {menus.map((item, index) => (
