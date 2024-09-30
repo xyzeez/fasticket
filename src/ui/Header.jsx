@@ -25,7 +25,7 @@ const Header = ({ relativeClasses }) => {
         <MainMenu relativeClasses="col-start-3 lg:col-start-3 lg:col-end-4 col-end-4 row-start-1 row-end-2 ml-auto" />
         <UserMenu relativeClasses="col-start-1 lg:col-start-4 lg:col-end-5 col-end-2 row-start-1 row-end-2 mr-auto lg:mr-0 lg:ml-auto" />
       </div>
-      <div className="hidden items-center justify-center lg:flex lg:border-t lg:border-b-[hsla(0,0%,92%,1)] lg:px-8 lg:py-[13.5px]">
+      <div className="hidden items-center justify-center lg:flex lg:border-t lg:border-b-[hsla(0,0%,92%,1)] lg:px-8 lg:py-[17.5px]">
         <CategoriesSlider />
       </div>
     </header>

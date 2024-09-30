@@ -48,23 +48,26 @@ const NextArrow = () => {
 
 const CategoriesSlider = () => {
   return (
-    <div className="mx-auto w-full max-w-[586px] overflow-hidden">
-      <Swiper
-        spaceBetween={0}
-        slidesPerView={4}
-        className="relative flex w-full flex-row items-center px-[54px] py-2 text-center text-sm font-medium text-[hsla(0,7%,21%,1)] before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-8 before:bg-white after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-8 after:bg-white"
-      >
-        {categories.map((category, index) => (
-          <SwiperSlide key={index}>
-            <Link to="/" className="menu-link">
-              {category}
-            </Link>
-          </SwiperSlide>
-        ))}
-        <PrevArrow />
-        <NextArrow />
-      </Swiper>
-    </div>
+    <Swiper
+      spaceBetween={8}
+      slidesPerView="auto"
+      className="relative grid w-full max-w-xl grid-cols-1 grid-rows-1 px-[62px] py-1 before:absolute before:inset-y-0 before:left-0 before:z-10 before:w-[62px] before:bg-white after:absolute after:inset-y-0 after:right-0 after:z-10 after:w-[62px] after:bg-white"
+      wrapperTag="menu"
+      wrapperClass="col-start-1 col-end-2 row-start-1 row-end-2"
+    >
+      {categories.map((category, index) => (
+        <SwiperSlide
+          key={index}
+          className="w-fit px-4 text-sm font-medium text-[hsla(0,7%,21%,1)]"
+        >
+          <Link to="/" className="menu-link w-fit">
+            {category}
+          </Link>
+        </SwiperSlide>
+      ))}
+      <PrevArrow />
+      <NextArrow />
+    </Swiper>
   );
 };
 
